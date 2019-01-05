@@ -26,9 +26,4 @@ describe('omahaHoldem', () => {
         // Example in Huchinson's original article
         expect(texasHoldem({hand: ['As', '3s', 'Kd', '4d']})).to.equal(30);
     });
-
-    it ('xxx', () => {
-        // Example in Huchinson's original article
-        expect(texasHoldem({hand: ['As', 'Js', 'Ad', '4c']})).to.equal(30);
-    });
 });
