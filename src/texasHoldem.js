@@ -16,6 +16,7 @@ const rankPoints = new Map([
     ['2', 2]
 ]);
 
+// Based on http://erh2.homestead.com/hem.html
 const texasHoldem = ({hand}) => {
     if (!hand || hand.length !== 2) {
         throw new Error('Invalid texas holdem hand');
