@@ -143,7 +143,7 @@ const omahaHoldem = ({hand}) => {
     default:
         break;
     }
-    points -= Math.min(6, 2 * gaps);
+    points -= 2 * gaps;
     if (straightAce) {
         points -= 4;
     }
