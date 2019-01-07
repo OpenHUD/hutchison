@@ -3,18 +3,26 @@ import {expect} from 'chai';
 
 describe('texasHoldem', () => {
     it ('correctly calculates AA', () => {
-        expect(texasHoldem({hand: ['Ad', 'Ac']})).to.equal(42);
+        const {points, percentile} = texasHoldem({hand: ['Ad', 'Ac']});
+        expect(points).to.equal(42);
+        expect(percentile).to.equal(1);
     });
 
     it ('correctly calculates QJo', () => {
-        expect(texasHoldem({hand: ['Qd', 'Jc']})).to.equal(28);
+        const {points, percentile} = texasHoldem({hand: ['Qd', 'Jc']});
+        expect(points).to.equal(28);
+        expect(percentile).to.equal(0.9079939668174962);
     });
 
     it ('correctly calculates 64s', () => {
-        expect(texasHoldem({hand: ['6d', '4d']})).to.equal(16);
+        const {points, percentile} = texasHoldem({hand: ['6d', '4d']});
+        expect(points).to.equal(16);
+        expect(percentile).to.equal(0.3770739064856712);
     });
 
     it ('correctly calculates 72o', () => {
-        expect(texasHoldem({hand: ['7d', '2c']})).to.equal(9);
+        const {points, percentile} = texasHoldem({hand: ['7d', '2c']});
+        expect(points).to.equal(9);
+        expect(percentile).to.equal(0.04524886877828054);
     });
 });
