@@ -1,5 +1,3 @@
-import {distance} from '@openhud/helpers';
-
 // Generated with following code:
 /*
 const {omahaHoldem} = require("hutchison")
