@@ -1,7 +1,7 @@
 {
   "name": "hutchison",
-  "version": "2.1.1",
-  "description": "Hutchison point system calculator for various poker games",
+  "version": "3.0.0",
+  "description": "Hutchison poker hand rankings",
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
