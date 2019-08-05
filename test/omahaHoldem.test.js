@@ -21,7 +21,7 @@ describe('omahaHoldem', () => {
     describe('4-handed', () => {
         it ('correctly calculates (AK)(AK)', () => {
             const {ev, percentile} = omahaHoldem({hand: ['As', 'Ks', 'Ah', 'Kh'], players: 4});
-            expect(ev).to.be.closeTo(0.44, 0.01);
+            expect(ev).to.be.closeTo(0.45, 0.01);
             expect(percentile).to.be.closeTo(1, 0.001);
         });
     });
@@ -29,7 +29,7 @@ describe('omahaHoldem', () => {
     describe('5-handed', () => {
         it ('correctly calculates (AK)(AK)', () => {
             const {ev, percentile} = omahaHoldem({hand: ['As', 'Ks', 'Ah', 'Kh'], players: 5});
-            expect(ev).to.be.closeTo(0.38, 0.01);
+            expect(ev).to.be.closeTo(0.39, 0.01);
             expect(percentile).to.be.closeTo(1, 0.001);
         });
     });
@@ -37,7 +37,7 @@ describe('omahaHoldem', () => {
     describe('6-handed', () => {
         it ('correctly calculates (AK)(AK)', () => {
             const {ev, percentile} = omahaHoldem({hand: ['As', 'Ks', 'Ah', 'Kh'], players: 6});
-            expect(ev).to.be.closeTo(0.34, 0.01);
+            expect(ev).to.be.closeTo(0.35, 0.01);
             expect(percentile).to.be.closeTo(1, 0.001);
         });
     });
@@ -45,7 +45,7 @@ describe('omahaHoldem', () => {
     describe('7-handed', () => {
         it ('correctly calculates (AK)(AK)', () => {
             const {ev, percentile} = omahaHoldem({hand: ['As', 'Ks', 'Ah', 'Kh'], players: 7});
-            expect(ev).to.be.closeTo(0.31, 0.01);
+            expect(ev).to.be.closeTo(0.32, 0.01);
             expect(percentile).to.be.closeTo(1, 0.001);
         });
     });
@@ -61,7 +61,7 @@ describe('omahaHoldem', () => {
     describe('9-handed', () => {
         it ('correctly calculates (AK)(AK)', () => {
             const {ev, percentile} = omahaHoldem({hand: ['As', 'Ks', 'Ah', 'Kh'], players: 9});
-            expect(ev).to.be.closeTo(0.27, 0.01);
+            expect(ev).to.be.closeTo(0.28, 0.01);
             expect(percentile).to.be.closeTo(1, 0.001);
         });
     });
