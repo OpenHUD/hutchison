@@ -53,7 +53,7 @@ describe('omahaHoldem', () => {
     describe('8-handed', () => {
         it ('correctly calculates (AK)(AK)', () => {
             const {ev, percentile} = omahaHoldem({hand: ['As', 'Ks', 'Ah', 'Kh'], players: 8});
-            expect(ev).to.be.closeTo(0.29, 0.01);
+            expect(ev).to.be.closeTo(0.30, 0.01);
             expect(percentile).to.be.closeTo(1, 0.001);
         });
     });
