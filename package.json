@@ -2,7 +2,7 @@
   "name": "hutchison",
   "version": "3.0.7",
   "description": "Hutchison poker hand rankings",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha --r esm",
     "prepublish": "npm test"
