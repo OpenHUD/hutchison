@@ -1,6 +1,6 @@
 {
   "name": "hutchison",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "Hutchison poker hand rankings",
   "main": "src/index.js",
   "scripts": {
