@@ -24,8 +24,8 @@
   "homepage": "https://github.com/openhud/hutchison",
   "devDependencies": {
     "esm": "^3.2.25",
-    "chai": "^3.5.0",
-    "mocha": "^5.2.0"
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
   },
   "dependencies": {
     "@openhud/helpers": "^1.0.9"
