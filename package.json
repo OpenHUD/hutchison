@@ -28,7 +28,7 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "@openhud/helpers": "^1.0.5"
+    "@openhud/helpers": "^1.0.9"
   },
   "directories": {
     "test": "test"
